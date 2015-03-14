@@ -1,1 +1,63 @@
 /* _mixins.scss */
+
+// POSICIONES
+
+@mixin centrado{
+left:50%;
+top:50%;
+-webkit-transform: translate(-50% , -50%);
+}
+
+@mixin centrado-hor{
+left:50%;
+-webkit-transform: translate(-50%);
+}
+
+
+//ADORNOS
+
+@mixin border-radius{
+ border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+}
+
+
+//TIPOGRAFIAS
+
+@mixin fuente-btn{
+font-family: 'Alegreya Sans', sans-serif;
+color: #000;
+font-size: 1.2em;
+text-transform:uppercase;
+color: #FFF;
+}
+
+@mixin fuente-cab{
+font-family: 'Alegreya Sans', sans-serif;
+color: #000;
+font-size: 3.2em;
+text-transform:uppercase;
+color: #FFF;
+}
+
+@mixin fuente-btnG{
+font-family: 'Alegreya Sans', sans-serif;
+color: #FFF;
+font-size: 1.7em;
+text-transform:uppercase;
+}
+
+@mixin fuente-tit{
+font-family: 'Open Sans', sans-serif;
+color: #FFF;
+font-size: 1.9em;
+}
+
+@mixin fuente-tex{
+font-family: 'Open Sans', sans-serif;
+color: #000;
+font-weight: 300;
+font-size: 1.1em;
+}
+
